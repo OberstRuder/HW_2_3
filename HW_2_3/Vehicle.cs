@@ -23,8 +23,9 @@ namespace HW_2_3
 
         public override string ToString()
         {
-            return $"VehicleInfo: {Info} Speed: {Speed} Weight: {Weight}";
+            return $"VehicleInfo: {Info}\t Speed: {Speed} km/h\t Weight: {Weight}";
         }
+
 
 
     }
