@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace HW_2_3
 {
-    abstract class Car : Vehicle
+    class SportCar : Car
     {
-        protected Car(int speed, int weigt, string info) : base(speed, weigt, info)
-        { 
+        public SportCar(int speed, int weight, string info) : base(speed, weight, info)
+        {
         }
-
         public override void Drive()
         {
+            Console.WriteLine("Sport car is driving");
         }
     }
 }

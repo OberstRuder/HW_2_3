@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace HW_2_3
 {
-    internal class FamilyCar
+    class FamilyCar : Car
     {
+        public FamilyCar(int speed, int weight, string info) : base(speed, weight, info) 
+        {
+        }
+        public override void Drive()
+        {
+            Console.WriteLine("Family car is driving");
+        }
     }
 }

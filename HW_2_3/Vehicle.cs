@@ -1,16 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace HW_2_3
 {
-    internal class Vehicle
+    abstract class Vehicle
     {
+        public Vehicle(int speed, int weight, string info)
+        {
+            Speed = speed;
+            Weight = weight;
+            Info = info;
+        }
         public double Speed { get; set; }
         public double Weight { get; set; }
-        public string Model { get; init; }
+        public string Info { get; set; }
+
+        public virtual void Drive() { }
+
+        public override string ToString()
+        {
+            return $"Speed: {Speed} Weight: {Weight} VehicleInfo: {Info}";
+        }
+
 
     }
 }
