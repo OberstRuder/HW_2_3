@@ -12,8 +12,8 @@
                 new FamilyCar(120, 2100, "FamilyCar2"),
                 new SportCar(300, 900, "SportCar1"),
                 new SportCar(280, 1100, "SportCar2"),
-                new Airplane(1100, 45000, "Airoplan1"),
-                new Airplane(360, 250000, "Airoplane2"),
+                new Airplane(1100, 45000, "Airoplan1", 90000),
+                new Airplane(360, 250000, "Airoplane2", 550000),
             };
             vehicles.Write();
         }
