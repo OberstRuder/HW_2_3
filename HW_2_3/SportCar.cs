@@ -10,7 +10,9 @@ namespace HW_2_3
     {
         public SportCar(int speed, int weight, string info) : base(speed, weight, info)
         {
+            Places = 2;
         }
+        
         public override void Drive()
         {
             Console.WriteLine("Sport car is driving");

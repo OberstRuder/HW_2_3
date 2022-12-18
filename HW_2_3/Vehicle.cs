@@ -15,15 +15,16 @@ namespace HW_2_3
             Weight = weight;
             Info = info;
         }
-        public double Speed { get; set; }
-        public double Weight { get; set; }
-        public string Info { get; set; }
+        private int Speed { get; set; }
+        private int Weight { get; set; }
+        private string Info { get; set; }
+        protected int Places { get; set; }
 
         public virtual void Drive() { }
 
         public override string ToString()
         {
-            return $"VehicleInfo: {Info}\t Speed: {Speed} km/h\t Weight: {Weight}";
+            return $"VehicleInfo: {Info}\t Speed: {Speed} km/h\t Weight: {Weight}\t Places: {Places}";
         }
 
 

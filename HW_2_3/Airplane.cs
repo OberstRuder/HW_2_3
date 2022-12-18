@@ -10,6 +10,7 @@ namespace HW_2_3
     {
         public Airplane(int speed, int weight, string info) : base(speed, weight, info)
         {
+            Places = 188;
         }
         public override void Drive()
         {
