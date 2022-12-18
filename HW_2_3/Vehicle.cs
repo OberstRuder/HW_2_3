@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HW_2_3
 {
-    abstract class Vehicle
+    abstract class Vehicle : IComparable<Vehicle>, IComparer<Vehicle>
     {
         public Vehicle(int speed, int weight, string info)
         {
@@ -15,12 +15,22 @@ namespace HW_2_3
             Weight = weight;
             Info = info;
         }
-        private int Speed { get; set; }
+        public int Speed { get; set; }
         private int Weight { get; set; }
         private string Info { get; set; }
         protected int Places { get; set; }
 
         public virtual void Drive() { }
+
+        public int Compare(Vehicle? x, Vehicle? y)
+        {
+            return x.Weight.CompareTo(y.Weight);
+        }
+
+        public int CompareTo(Vehicle? other)
+        {
+            return this.Compare(this, other);
+        }
 
         public override string ToString()
         {

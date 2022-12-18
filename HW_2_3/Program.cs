@@ -1,4 +1,6 @@
-﻿namespace HW_2_3
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace HW_2_3
 {
     internal class Program
     {
@@ -15,7 +17,10 @@
                 new Airplane(1100, 45000, "Airoplan1", 90000),
                 new Airplane(360, 250000, "Airoplane2", 550000),
             };
-            vehicles.Write();
+
+            Array.Sort(vehicles);
+
+            vehicles.Print();
         }
     }
 }

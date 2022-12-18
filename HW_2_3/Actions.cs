@@ -8,7 +8,7 @@ namespace HW_2_3
 {
     static class Actions
     {
-        public static void Write(this IEnumerable<Vehicle> vehicles)
+        public static void Print(this IEnumerable<Vehicle> vehicles)
         {
             StringBuilder stringBuilder = new StringBuilder("");
             foreach (Vehicle item in vehicles)
