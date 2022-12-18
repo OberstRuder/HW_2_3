@@ -4,7 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Vehicle[] vehicles = new Vehicle[]
+            {
+                new Bus(100, 26000, "Bus1"),
+                new Bus(90, 28000, "Bus2"),
+
+                new FamilyCar(140, 1500, "FamilyCar1"),
+                new FamilyCar(120, 2100, "FamilyCar2"),
+
+                new SportCar(300, 900, "SportCar1"),
+                new SportCar(280, 1100, "SportCar2"),
+
+                new Airplane(1100, 45000, "Airoplan1"),
+                new Airplane(360, 250000, "Airoplane2"),
+            };
         }
     }
 }

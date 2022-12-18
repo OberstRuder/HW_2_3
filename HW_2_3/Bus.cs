@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace HW_2_3
 {
-    class Airplane : Vehicle
+    class Bus : Vehicle
     {
-        public Airplane(int speed, int weight, string info) : base(speed, weight, info)
+        public Bus(int speed, int weight, string info) : base(speed, weight, info) 
         {
         }
         public override void Drive()
         {
-            Console.WriteLine("Airplane is flying");
+            Console.WriteLine("Bus is driving");
         }
     }
 }
