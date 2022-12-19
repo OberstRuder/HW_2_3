@@ -16,9 +16,9 @@ namespace HW_2_3
             Info = info;
         }
         public int Speed { get; set; }
-        private int Weight { get; set; }
-        private string Info { get; set; }
-        protected int Places { get; set; }
+        public int Weight { get; set; }
+        public string Info { get; set; }
+        public int Places { get; set; }
 
         public virtual void Drive() { }
 

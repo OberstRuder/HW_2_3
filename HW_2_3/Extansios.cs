@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW_2_3
 {
-    static class Actions
+    static class Extansios
     {
         public static void SortedPrint(this IEnumerable<Vehicle> vehicles)
         {
@@ -14,6 +14,10 @@ namespace HW_2_3
             Array.ForEach(sorted, Console.WriteLine);
         }
 
-
+        public static void Heavy(this IEnumerable<Vehicle> vehicles)
+        {
+            var massObj = vehicles.MaxBy(ob => ob.Weight);
+            Console.WriteLine($"The heaviest transport: {massObj}");
+        }
     }
 }

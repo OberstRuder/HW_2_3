@@ -19,7 +19,8 @@ namespace HW_2_3
             };
 
             vehicles.SortedPrint();
-
+            Console.WriteLine();
+            vehicles.Heavy();
         }
     }
 }
