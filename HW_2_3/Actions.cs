@@ -8,15 +8,12 @@ namespace HW_2_3
 {
     static class Actions
     {
-        public static void Print(this IEnumerable<Vehicle> vehicles)
+        public static void SortedPrint(this IEnumerable<Vehicle> vehicles)
         {
-            StringBuilder stringBuilder = new StringBuilder("");
-            foreach (Vehicle item in vehicles)
-            {
-                stringBuilder.Append($"{item.ToString()} \n");
-            }
-
-            Console.WriteLine(stringBuilder);
+            var sorted = vehicles.OrderBy(ob => ob.Speed).ToArray();
+            Array.ForEach(sorted, Console.WriteLine);
         }
+
+
     }
 }

@@ -18,9 +18,8 @@ namespace HW_2_3
                 new Airplane(360, 250000, "Airoplane2", 550000),
             };
 
-            Array.Sort(vehicles);
+            vehicles.SortedPrint();
 
-            vehicles.Print();
         }
     }
 }
